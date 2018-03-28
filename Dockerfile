@@ -50,5 +50,5 @@ RUN mkdir -p /root/catkin_ws/src; . /opt/ros/kinetic/setup.sh; \
 RUN hg clone https://bitbucket.org/osrf/gzweb /root/gzweb; \
     cd /root/gzweb; hg up default; . /opt/ros/kinetic/setup.sh; \
     xvfb-run -s "-screen 0 1280x1024x24" ./deploy.sh -m local;
-EXPOSE 8080, 7681
+EXPOSE 8080 7681
 
